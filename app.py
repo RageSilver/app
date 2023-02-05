@@ -1,7 +1,5 @@
 import streamlit as st
 import requests
-import pickle
-import streamlit_authenticator as stauth
 from pathlib import Path
 from PIL import Image
 from streamlit_lottie import st_lottie
