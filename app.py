@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from pathlib import Path
 from PIL import Image
-from streamlit_lottie import st_lottie
+import streamlit_lottie
 st.set_page_config(page_title='My Website', page_icon=':tada:', layout='wide')
 
 def load_css_file(css_file_path):
@@ -85,7 +85,7 @@ with st.container():
     )
     st.write("[Youtube Channel Link >](https://www.youtube.com/channel/UCtNNl-4R1_n8rI78SB11Wbw?app=desktop)") 
 with right_column:
-    st_lottie(lottie_coding, height=350, key='coding')
+    st(lottie_coding, height=350, key='coding')
 
 #Projects
 with st.container():
@@ -127,7 +127,7 @@ with left_col:
     unsafe_allow_html=True,
     )
 with right_col:
-    st_lottie(lottie_coding2, height=350)
+    streamlit_lottie(lottie_coding2, height=350)
 
 
 #FAQ
